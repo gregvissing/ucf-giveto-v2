@@ -1674,6 +1674,7 @@ pre[class*="language-"] {
 #miniDonationForm {
   background-color: #fff;
   margin: 0 0 0 auto;
+  overflow: hidden;
 }
 
 #miniDonationForm div[class*="-box"] {
