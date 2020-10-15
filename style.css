@@ -1,3 +1,7 @@
+.hide {
+	display: none;
+}
+
 @-webkit-keyframes animateLeft {
   0% {
     left: 150%;
