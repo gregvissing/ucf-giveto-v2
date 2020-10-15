@@ -1675,6 +1675,9 @@ pre[class*="language-"] {
   background-color: #fff;
   margin: 0 0 0 auto;
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 7px 0 rgba(0,0,0,.5);
+  box-shadow: 0 4px 7px 0 rgba(0,0,0,.5);
+    
 }
 
 #miniDonationForm div[class*="-box"] {
