@@ -143,7 +143,7 @@ setAmounts();
 setGiftTypes();
 
 initMiniDonationFormValues();
-setURLparams();
+// setURLparams();
 
 $(function () {
 	$("input.SearchTextBox").attr("placeholder", "Search");
