@@ -136,7 +136,7 @@ $(".dollar-handles .dollar-box > input").on("click", function (e) {
 		}
 	});
 
-	setURLparams();
+	// setURLparams();
 });
 
 setAmounts();
