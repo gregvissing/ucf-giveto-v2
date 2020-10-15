@@ -166,6 +166,8 @@ $(document).ready(function () {
 				$(this).parent().removeClass("active");
 			}
 		});
+		
+		setURLparams();
 	});
 });
 
