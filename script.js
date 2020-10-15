@@ -86,20 +86,24 @@ $(document).ready(function () {
 		);
 	});
 	
-	$(".dollar-handles .dollar-box input").on("click", function (e) {
+	$("#custom-amount").on("click", function (e) {
+		e.preventDefault();
+		$(".dollar-box").removeClass("active");
+		$(this).focus();
+	});
+	
+	$(".dollar-handles .dollar-box > input").on("click", function (e) {
 		e.preventDefault();
 		let amount = $(this).data("value");
-		console.log(amount);
 		
 		$(".dollar-box input").each(function() {
-			
-		})
-		
-		// $(".dollar-box").removeClass("active");
-		
-		
-		// console.log("hi" + $(this).data("value"));
-		// $(this).parent().addClass("acitve");
+			var thisAmount = $(this).data("value")
+			if (thisAmount == amount) {
+				$(this).parent().addClass("active");
+			} else {
+				$(this).parent().removeClass("active");
+			}
+		});
 	});
 });
 
