@@ -169,6 +169,22 @@ $(document).ready(function () {
 		
 		setURLparams();
 	});
+	
+	$(".gift-box > input").on("click", function (e) {
+		e.preventDefault();
+		let giftType = $(this).data("value");
+		
+		$(".gift-box input").each(function() {
+			var thisGiftType = $(this).data("value")
+			if (thisGiftType == giftType) {
+				$(this).parent().addClass("active");
+			} else {
+				$(this).parent().removeClass("active");
+			}
+		});
+		
+		setURLparams();
+	});
 });
 
 function headerHeight(element) {
