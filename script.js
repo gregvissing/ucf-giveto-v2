@@ -1,4 +1,4 @@
-ScrollTrigger.create({ start: 'top -80', end: 99999, toggleClass: {className: 'main-header--reduced', targets: '.main-header'}});
+// ScrollTrigger.create({ start: 'top -80', end: 99999, toggleClass: {className: 'main-header--reduced', targets: '.main-header'}});
    
 $(function () {
 	$("input.SearchTextBox").attr("placeholder", "Search");
