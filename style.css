@@ -2207,3 +2207,7 @@ div[role="search"] .search-widget > [type="submit"] svg {
   -webkit-transform: skew(-30deg);
   transform: skew(-30deg);
 }
+
+.text-container {
+  padding: 1em;
+}
