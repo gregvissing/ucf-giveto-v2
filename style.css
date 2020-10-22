@@ -2250,3 +2250,17 @@ div[role="search"] .search-widget > [type="submit"] svg {
   width: 300px;
   margin-right: 5px;
 }
+
+#search > .content-wrapper input[type="text"] {
+  background-color: #fff !important;
+  border: 2px solid #d8d8d8;
+  color: #444;
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 47px;
+  max-width: 100%;
+  padding: .65rem;
+  width: 100%;
+}
