@@ -1464,7 +1464,7 @@ a.skip-link {
 }
 
 .main-header {
-  padding: 1em 0;
+  padding: 0;
   position: fixed;
   width: 100%;
   left: 0;
@@ -1493,6 +1493,7 @@ a.skip-link {
   max-width: 1200px;
   height: 60px;
   line-height: 60px;
+  padding: 10px 0;
 }
 
 .main-header .content-wrapper .logo {
