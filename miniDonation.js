@@ -73,8 +73,6 @@ $(document).ready(function () {
 			)
 				.parent()
 				.addClass("active");
-			document.getElementById("amountSelected").innerHTML = $(".dollar-box.active input").data("value");
-			document.getElementById("giftTypeSelected").innerHTML = $(".gift-box.active input").val();
 
 			setURLparams();
 		}
