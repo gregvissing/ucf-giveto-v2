@@ -1380,6 +1380,12 @@ body {
   height: 100%;
 }
 
+.fpo {
+  padding: 2em;
+  text-align: center;
+  border: 2px dashed blue;
+}
+
 p a {
   color: #e00122;
 }
