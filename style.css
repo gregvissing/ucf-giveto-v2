@@ -2217,3 +2217,36 @@ div[role="search"] .search-widget > [type="submit"] svg {
 .text-container {
   padding: 1em;
 }
+
+#search {
+  display: none;
+  background: #000;
+  padding: 0.25em 0;
+}
+
+#search > .content-wrapper {
+  display: block;
+}
+
+#search > .content-wrapper table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#search > .content-wrapper div[id*='_pnlSearch'], #search > .content-wrapper div[id*='_pnlSearch'] table {
+  width: 100%;
+}
+
+#search > .content-wrapper div[id*='_pnlSearch'] table.BBFormTable.SearchFormTable > tbody > tr:nth-child(2) > td > table > tbody > tr {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#search > .content-wrapper div[id*='_pnlSearch'] table.BBFormTable.SearchFormTable > tbody > tr:nth-child(2) > td > table > tbody > tr > td:first-child {
+  display: none;
+}
+
+#search > .content-wrapper div[id*='_pnlSearch'] table.BBFormTable.SearchFormTable > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) {
+  width: 300px;
+  margin-right: 5px;
+}
