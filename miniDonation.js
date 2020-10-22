@@ -66,6 +66,46 @@ $(document).ready(function () {
 
 			$("a.donate").attr("href", myURL);
 		}
+		
+		function initMiniDonationFormValues() {
+			$(
+				".dollar-box input[data-value='100'], .gift-box input[data-value='One-Time']"
+			)
+				.parent()
+				.addClass("active");
+			document.getElementById("amountSelected").innerHTML = $(".dollar-box.active input").data("value");
+			document.getElementById("giftTypeSelected").innerHTML = $(".gift-box.active input").val();
+
+			setURLparams();
+		}
+		
+		function setGiftTypes() {
+			let arrGiftTypes = ["One-Time", "Monthly", "Pledge"];
+
+			var giftHandles = document.querySelector(".gift-type-container");
+
+			arrGiftTypes.forEach((element) => {
+				console.log(element);
+
+				var giftBox = document.createElement("div"),
+					giftInput = document.createElement("input"),
+					giftLabel = document.createElement("label");
+
+				giftBox.classList.add("gift-box");
+				giftInput.classList.add("btnGiftType");
+				giftInput.setAttribute("type", "button");
+				giftInput.setAttribute("data-value", element);
+				giftInput.value = element;
+				// giftLabel.textContent = element;
+
+				giftBox.appendChild(giftInput);
+				// giftBox.appendChild(giftLabel);
+
+				giftHandles.appendChild(giftBox);
+			});
+			
+			initMiniDonationFormValues();
+		}
 
 		function setAmounts() {
 			let oneTimeDonationAmounts = [50, 100, 250, 500, 1000];
@@ -94,45 +134,9 @@ $(document).ready(function () {
 
 				dollarHandles.appendChild(amountBox);
 			});
+			
+			setGiftTypes();
 		}
-
-		function setGiftTypes() {
-			let arrGiftTypes = ["One-Time", "Monthly", "Pledge"];
-
-			var giftHandles = document.querySelector(".gift-type-container");
-
-			arrGiftTypes.forEach((element) => {
-				console.log(element);
-
-				var giftBox = document.createElement("div"),
-					giftInput = document.createElement("input"),
-					giftLabel = document.createElement("label");
-
-				giftBox.classList.add("gift-box");
-				giftInput.classList.add("btnGiftType");
-				giftInput.setAttribute("type", "button");
-				giftInput.setAttribute("data-value", element);
-				giftInput.value = element;
-				// giftLabel.textContent = element;
-
-				giftBox.appendChild(giftInput);
-				// giftBox.appendChild(giftLabel);
-
-				giftHandles.appendChild(giftBox);
-			});
-		}
-
-		function initMiniDonationFormValues() {
-			$(
-				".dollar-box input[data-value='100'], .gift-box input[data-value='One-Time']"
-			)
-				.parent()
-				.addClass("active");
-			document.getElementById("amountSelected").innerHTML = $(".dollar-box.active input").data("value");
-			document.getElementById("giftTypeSelected").innerHTML = $(".gift-box.active input").val();
-
-			setURLparams();
-		}	
 
 		$("#custom-amount").on("click", function (e) {
 			e.preventDefault();
@@ -149,10 +153,6 @@ $(document).ready(function () {
 		});
 
 		setAmounts();
-		setGiftTypes();
-
-		initMiniDonationFormValues();
-		setURLparams();
 
 		$(document).on("click", "div.dollar-box input" , function() {
 			let amount = $(this).data("value");
@@ -219,14 +219,4 @@ $(document).ready(function () {
 		return /^-?\d*[.,]?\d{0,2}$/.test(value);
 	});
 	
-	$('.show-hide').each(function() {
-	  	$trigger = $('.show-hide-trigger', this);
-	  	$content = $('.show-hide-content', this);
-
-	  	$trigger.click(function() {
-			$content.slideToggle();
-
-			$trigger.attr('aria-expanded', $trigger.attr('aria-expanded') == 'false' ? 'true' : 'false');
-	  	});
-	});
 });
