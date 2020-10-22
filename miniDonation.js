@@ -140,13 +140,11 @@ $(document).ready(function () {
 			e.preventDefault();
 			$(".dollar-box").removeClass("active");
 			$(this).focus();
-			document.getElementById("amountSelected").innerHTML = 0;
 			setURLparams();
 		});
 
 		$("#custom-amount").on("keyup", function (e) {
 			e.preventDefault();
-			document.getElementById("amountSelected").innerHTML = $("#custom-amount").val();
 			setURLparams();
 		});
 
@@ -154,7 +152,6 @@ $(document).ready(function () {
 
 		$(document).on("click", "div.dollar-box input" , function() {
 			let amount = $(this).data("value");
-			document.getElementById("amountSelected").innerHTML = amount;
 			$("#custom-amount").val("");
 
 			$(".dollar-box input").each(function() {
@@ -171,7 +168,6 @@ $(document).ready(function () {
 
 		$(document).on("click", "div.gift-box input" , function() {
 			let gift = $(this).data("value");
-			document.getElementById("giftTypeSelected").innerHTML = gift;
 
 			$(".gift-box input").each(function() {
 				var thisGift = $(this).data("value")
