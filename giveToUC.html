@@ -102,128 +102,31 @@
 
                 <div class="width-half" id="donationForm">
                     <div class="row">
-                        <fieldset>
-                            <label>I want to support:</label>
-                            <div class="select">
-                                <select id="areaSupportSelect">
-                                    <option disabled selected value="First select">
-                                        Select an area to support
-                                    </option>
-                                    <option value="UC Health">
-                                        UC Health
-                                    </option>
-                                    <option value="College/Units">
-                                        College/Units
-                                    </option>
-                                    <option value="Scholarships">
-                                        Scholarships
-                                    </option>
-                                    <option value="The UC Fund">
-                                        The UC Fund
-                                    </option>
-                                    <option value="Other">
-                                        Type your own fund/Seach All Funds
-                                    </option>
-                                </select>
-                            </div>
-
-                            <div class="select">
-                                <select id="collegeUnitSelect">
-                                    <option disabled selected value="First select">
-                                        Select a College/Unit to support
-                                    </option>
-                                    <option>
-                                        Option 1
-                                    </option>
-                                    <option>
-                                        Option 2
-                                    </option>
-                                    <option>
-                                        Option 3
-                                    </option>
-                                    <option>
-                                        Option 4
-                                    </option>
-                                </select>
-                            </div>
-
-                            <div class="select">
-                                <select id="fundSelect">
-                                    <option disabled selected value="First select">
-                                        Select a Fund to support
-                                    </option>
-                                    <option>
-                                        Option 1
-                                    </option>
-                                    <option>
-                                        Option 2
-                                    </option>
-                                    <option>
-                                        Option 3
-                                    </option>
-                                    <option>
-                                        Option 4
-                                    </option>
-                                </select>
-                            </div>
-
-                            <div class="hide" role="search">
-                                <label for="srch_v">Search for Fund</label>
-                                <div class="search-widget">
-                                    <input id="srch_v" name="srch_v" type="search"><button aria-label="Submit Search" id="srch_btn_v" type="submit"></button>
-                                </div>
-                            </div>
-                        </fieldset>
+                      <fieldset><label>I want to support:</label>
+                        <div class="select"><select id="areaSupportSelect"><option disabled="" selected="" value="First select">Select an area to support</option></select></div>
+                        <div class="select"><select id="collegeUnitSelect"><option disabled="" selected="" value="First select">Select a College/Unit to support</option></select></div>
+                        <div class="select"><select id="fundSelect"><option disabled="" selected="" value="First select">Select a Fund to support</option></select></div>
+                        <div class="hide" role="search"><label for="srch_v">Search for Fund</label>
+                          <div class="search-widget"><input type="search" id="srch_v" name="srch_v"><button type="submit" id="srch_btn_v" aria-label="Submit Search"></button></div>
+                        </div>
+                      </fieldset>
                     </div>
-
                     <div class="row">
-                        <fieldset>
-                            <label for="custom-amount">Gift amount:</label><input id="custom-amount" placeholder="$0.00" type="text">
-                        </fieldset>
+                      <fieldset><label for="custom-amount">Gift amount:</label><input id="custom-amount" type="text" placeholder="$0.00"></fieldset>
                     </div>
-
                     <div class="row">
-                        <fieldset>
-                            <label for="frequencySelect">Gift Frequency:</label>
-                            <div class="select">
-                                <select id="frequencySelect">
-                                    <option disabled selected value="First select">
-                                        Select a Gift Frequency
-                                    </option>
-                                    <option value="One-Time">
-                                        One-Time Gift
-                                    </option>
-                                    <option value="Monthly">
-                                        Monthly Gift
-                                    </option>
-                                    <option value="Pledge">
-                                        Pledge Payment
-                                    </option>
-                                </select>
-                            </div>
-                        </fieldset>
+                      <fieldset><label for="frequencySelect">Gift Frequency:</label>
+                        <div class="select"><select id="frequencySelect"><option disabled="" selected="" value="First select">Select a Gift Frequency</option><option value="One-Time">One-Time Gift</option><option value="Monthly">Monthly Gift</option><option value="Pledge">Pledge Payment</option></select></div>
+                      </fieldset>
                     </div>
-
                     <div class="row">
-                        <fieldset>
-                            <label>Additional Information:</label>
-                            <div class="s-cb">
-                                <input aria-checked="false" id="matchingGift" type="checkbox"><label for="matchingGift">Make a matching gift.</label>
-                            </div>
-
-                            <div class="s-cb">
-                                <input aria-checked="false" id="anonymous" type="checkbox"><label for="anonymous">Make my gift anonymous.</label>
-                            </div>
-
-                            <div class="s-cb">
-                                <input aria-checked="false" id="honorOf" type="checkbox"><label for="honorOf">This gift is a tribute/memorial in honor of:</label>
-                            </div>
-                        </fieldset>
+                      <fieldset><label>Additional Information:</label>
+                        <div class="s-cb"><input type="checkbox" id="matchingGift" aria-checked="false"><label for="matchingGift">Make a matching gift.</label></div>
+                        <div class="s-cb"><input type="checkbox" id="anonymous" aria-checked="false"><label for="anonymous">Make my gift anonymous.</label></div>
+                        <div class="s-cb"><input type="checkbox" id="honorOf" aria-checked="false"><label for="honorOf">This gift is a tribute/memorial in honor of:</label></div>
+                      </fieldset>
                     </div>
-
-                    <div class="row button-container [ box-flex align-start ]">
-                        <a class=" donate [ button ] [ font-base text-base weight-bold pad-left-500 ]" href="giveToUC.html"><span>DONATE NOW</span></a>
-                    </div>
+                    <div class="row button-container [ box-flex align-start ]"><a class=" donate [ button ] [ font-base text-base weight-bold pad-left-500 ]" href="giveToUC.html"><span>DONATE NOW</span></a></div>
                 </div>
             </div>
         </main>
